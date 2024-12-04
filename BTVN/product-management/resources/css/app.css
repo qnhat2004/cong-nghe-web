@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.btn-shop {
+    align-items: center;
+    background-color: #feba02;
+    background-position: 0px 0px;
+    border-color: #000;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 0.8px;
+    display: flex;
+    font-family: 'PolySans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 27.2px;
+    padding: 0px 25px;
+    text-align: center;
+}
