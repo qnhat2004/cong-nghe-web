@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreign('medicine_id')->references('medicine_id')->on('medicines')->onDelete('cascade');
             $table->integer('quantity');
             $table->dateTime('sale_date');
-            $table->string('customer_phone');
+            $table->string('customer_phone', 10);
             $table->timestamps();
         });
     }

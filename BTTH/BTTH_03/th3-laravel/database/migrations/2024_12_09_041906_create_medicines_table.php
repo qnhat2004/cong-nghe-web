@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('medicines', function (Blueprint $table) {
             $table->id('medicine_id')->autoIncrement();
-            $table->string('name');
-            $table->string('brand');
-            $table->string('dosage');
-            $table->string('form');
+            $table->string('name', 255)->unique('name');
+            $table->string('brand', 100);
+            $table->string('dosage', 50);
+            $table->string('form', 50);
             $table->decimal('price', 10,2)->default(0);
             $table->integer('stock')->default(0);
             $table->timestamps();
