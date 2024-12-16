@@ -15,7 +15,6 @@ class ComputersTableSeeder extends Seeder
     public function run(): void
     {
         $faker = Faker::create();
-
         for ($i = 0; $i < 100; $i++) {
             DB::table('computers')->insert([
                 'computer_name' => $faker->name(),
