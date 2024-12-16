@@ -80,7 +80,7 @@ class IssueController extends Controller
             'reported_date' => 'required|date',
             'description' => 'required',
             'urgency' => 'required',
-            'status' => 'required',
+            'status' => 'required'
         ]);
 
         $issue = Issue::findOrFail($id);
