@@ -328,8 +328,8 @@
 					<h2>Manage <b>Products</b></h2>
 				</div>
 				<div class="col-sm-6">
-					<a href="/products/create" class="btn btn-success"><i
-							class="material-icons">&#xE147;</i> <span>Add New Product</span></a>
+					<a href="/products/create" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add
+							New Product</span></a>
 					<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
 							class="material-icons">&#xE15C;</i> <span>Delete</span></a>
 				</div>
@@ -370,8 +370,8 @@
 						<td>{{ number_format($product->price, 2) }}</td>
 						<td>{{ htmlspecialchars($product->description) }}</td>
 						<td>{{ htmlspecialchars($product->category) }}</td>
-						<td><img src="{{ htmlspecialchars($product->image) }}" alt="Product Image" width="150"
-								height="150"></td>
+						<td><img src="{{ htmlspecialchars($product->image) }}" alt="Product Image" width="150" height="150">
+						</td>
 						<td>{{ htmlspecialchars($product->rating_rate) }}</td>
 						<td>{{ htmlspecialchars($product->rating_count) }}</td>
 						<td>
@@ -389,10 +389,7 @@
 		</table>
 	</div>
 </div>
+<!-- Pagination Links -->
 
-	<!-- Pagination Links -->
-	<div class="d-flex justify-content-end gap-4">
-		{{ $products->links('pagination::bootstrap-5') }}
-	</div>
 </div>
 @endsection
