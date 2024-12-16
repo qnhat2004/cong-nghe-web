@@ -42,7 +42,7 @@ class IssueController extends Controller
             'reported_date' => 'required|date',
             'description' => 'required',
             'urgency' => 'required',
-            'status' => 'required',
+            'status' => 'required'
         ]);
 
         Issue::create($validatedData);
